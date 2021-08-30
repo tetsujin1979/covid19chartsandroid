@@ -1,0 +1,2 @@
+rootProject.name = "Covid19IECharts-AWS Lambda-Android"
+include ':app'

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Covid19IECharts</string>
+    <string name="toggleButtons">Toggle Buttons</string>
+    <string name="processCases">Process Cases</string>
+    <string name="processDeaths">Process Deaths</string>
+    <string name="processHospitalisations">Process Hospitalisations</string>
+    <string name="processSwabs">Process Swabs</string>
+    <string name="processVaccinations">Process Vaccinations</string>
+</resources>

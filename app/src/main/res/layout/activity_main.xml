@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/toggleButtons"
+        android:layout_width="170dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/toggleButtons"
+        app:layout_constraintBottom_toTopOf="@+id/processCases"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/processCases"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/processCases"
+        android:enabled="false"
+        app:layout_constraintBottom_toTopOf="@+id/processDeaths"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButtons" />
+
+    <Button
+        android:id="@+id/processDeaths"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/processDeaths"
+        android:enabled="false"
+        app:layout_constraintBottom_toTopOf="@+id/processHospitalisations"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/processCases" />
+
+    <Button
+        android:id="@+id/processHospitalisations"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/processHospitalisations"
+        android:enabled="false"
+        app:layout_constraintBottom_toTopOf="@+id/processSwabs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/processDeaths" />
+
+    <Button
+        android:id="@+id/processSwabs"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/processSwabs"
+        android:enabled="false"
+        app:layout_constraintBottom_toTopOf="@+id/processVaccinations"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/processHospitalisations" />
+
+    <Button
+        android:id="@+id/processVaccinations"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="283dp"
+        android:text="@string/processVaccinations"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/processSwabs" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
